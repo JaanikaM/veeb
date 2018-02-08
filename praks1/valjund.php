@@ -5,6 +5,7 @@
  * Date: 08.02.2018
  * Time: 13.16
  */
+// muudatus
 // üherealine kommenraar
 /*
  * mitme
