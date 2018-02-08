@@ -27,3 +27,10 @@ echo 'Olen '.$eesNimi.' '.$pereNimi.'<br />';
 echo 'Sõidan koolist kesklinna bussiga number '.$bussiNumber.'<br />';
 echo 'Jõuan kesklinna '.$soiduKestvus.' tunniga<br />';
 echo 'Midagi konstantset? PI = '.NUMBER_PI.'<br />';
+// tingimuslaused
+$ilmValjas = 'päike paistab';
+if($ilmValjas == 'sajab lund'){
+    echo 'Tuleb minna sauna<br />';
+} else {
+    echo 'Pole mõtet sauna minna<br />';
+}
