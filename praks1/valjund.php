@@ -34,3 +34,6 @@ if($ilmValjas == 'sajab lund'){
 } else {
     echo 'Pole mõtet sauna minna<br />';
 }
+// ? operaator - ternary operaator
+$ilmValjas = 'sajab lund';
+echo ($ilmValjas == 'sajab lund') ? 'Tuleb minna sauna<br />' : 'Pole mõtet sauna minna<br />';
