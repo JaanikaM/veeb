@@ -1,0 +1,22 @@
+
+<?php
+        /**
+        * Created by PhpStorm.
+        * User: anna.karutina
+        * Date: 30.01.2018
+        * Time: 10:24
+        */
+        // üherealine kommenraar
+        /*
+        * mitme
+        * realine
+        * kommentaar
+        */
+        // väljastamine
+        echo 'Aine - Veebiprogrammeerimine'.'<br />'; // käsu lõpp - ;
+        print 'valikaine<br />';
+        // muutujate defineerimine
+        $eesNimi = 'Jaanika'; // eesnimi, string
+        $pereNimi = 'Müürisepp'; // perenimi , string
+        $bussiNumber = 4; // bussi number, integer
+        $soiduKestvus = 0.8; // sõidu kestvus, 0.8 tundi, float
