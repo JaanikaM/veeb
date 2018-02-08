@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: jaanikamy
- * Date: 08.02.2018
- * Time: 12:40
+ * Date: 30.01.2018
+ * Time: 10:24
  */
 // üherealine kommenraar
 /*
@@ -18,7 +18,7 @@ print 'valikaine<br />';
 $eesNimi = 'Jaanika'; // eesnimi, string
 $pereNimi = 'Müürisepp'; // perenimi , string
 $bussiNumber = 4; // bussi number, integer
-$soiduKestvus = 0.8; // sõidu kestvus, 0.8 tundi, float
+$soiduKestvus = 0.5; // sõidu kestvus, 0.5 tundi, float
 // konstandite defineerimine
 define('NUMBER_PI', 3.14);
 // Kasutades eel defineeritud muutujad ja konstandid
