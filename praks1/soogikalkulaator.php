@@ -8,6 +8,10 @@
 require_once 'funktsioonid.php'; // ligipääs funktsioonid.php failile
 // väljastame html-i vorm
 loeVormFailist('vorm.html');
+var_dump($_POST);
+echo '<pre>';
+print_r($_POST);
+echo '</pre>';
 // testimiseks paneme erinevad väärtused paika
 // kasutame selleks massiivi kujul (soodusKaart, kasOledOpilane)
 //
