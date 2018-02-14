@@ -54,9 +54,16 @@ foreach ($praed as $praad){
     echo '<h1>'.$praad['nimetus'].'</h1>';
     echo '<code>'.$praad['kirjeldus'].'</code><br />';
     echo '<ul>';
-    foreach ($kasutajad as $kasutaja){
-        $soogiHind = soogiHind($praad['hind'], $kasutaja['soodus'], $kasutaja['opilaskaart']);
-        echo '<dd>Prae hind '.$kasutaja['roll'].' = '.round($soogiHind, 2).' €</dd><br />';
+    foreach ($kasutajad as $kasutaja) {
+        // täinedame võrdlemisega vormi poolt tulnud andmetega
+        // kui ei ole veel vormi poolt andmed tulnud
+        if(empty($_POST)){
+            $_POST['roll'] = "külalisele";
+        }
+        if ($_POST['roll'] == $kasutaja['roll']) {
+            $soogiHind = soogiHind($praad['hind'], $kasutaja['soodus'], $kasutaja['opilaskaart']);
+            echo '<dd>Prae hind ' . $kasutaja['roll'] . ' = ' . round($soogiHind, 2) . ' €</dd><br />';
+        }
     }
     echo '</ul>';
 }
