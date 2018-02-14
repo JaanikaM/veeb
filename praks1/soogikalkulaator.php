@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: jaanika.muursepp
  * Date: 14.02.2018
- * Time: 13:23
+ * Time: 13:25
  */
 // funktsioon soodustuse arvutamiseks
 /**
@@ -11,7 +11,7 @@
  * @param $soodusKaart
  * @param $kasOledOpilane
  */
-function soogiHind($taisHind, $soodusKaart, $kasOledOpilane){
+function soogiHind($taisHind, $soodusKaart = false, $kasOledOpilane = false){
     // funktsiooni sisu
     $soodusHind = $taisHind;
     $soodustusProtsent = 15; // %
@@ -33,5 +33,5 @@ echo 'Prae hind õpilasele = '.round($soogiHind, 2).' €<br />';
 $soogiHind = soogiHind(2.65, true, false);
 echo 'Prae hind sooduskaardi omanikule = '.round($soogiHind, 2).' €<br />';
 // kui ei ole kliendi kaarti
-$soogiHind = soogiHind(2.65, false, false);
+$soogiHind = soogiHind(2.65);
 echo 'Prae hind = '.round($soogiHind, 2).' €<br />';
