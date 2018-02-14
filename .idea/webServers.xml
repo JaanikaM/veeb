@@ -1,22 +1,15 @@
-
-<?php
-        /**
-        * Created by PhpStorm.
-        * User: anna.karutina
-        * Date: 30.01.2018
-        * Time: 10:24
-        */
-        // üherealine kommenraar
-        /*
-        * mitme
-        * realine
-        * kommentaar
-        */
-        // väljastamine
-        echo 'Aine - Veebiprogrammeerimine'.'<br />'; // käsu lõpp - ;
-        print 'valikaine<br />';
-        // muutujate defineerimine
-        $eesNimi = 'Jaanika'; // eesnimi, string
-        $pereNimi = 'Müürisepp'; // perenimi , string
-        $bussiNumber = 4; // bussi number, integer
-        $soiduKestvus = 0.8; // sõidu kestvus, 0.8 tundi, float
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ff594260-5cc8-484b-a374-2ee03e8d6a39" name="muurisepp.ikt.khk.ee" url="http://muurisepp.ikt.khk.ee">
+        <fileTransfer host="muurisepp.ikt.khk.ee" port="22" rootFolder="/home/muuriseppiktkhk/public_html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

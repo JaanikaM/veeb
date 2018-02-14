@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="ikt">
+  <component name="PublishConfigData" autoUpload="Always" serverName="muurisepp.ikt.khk.ee" uploadOnCheckin="ff594260-5cc8-484b-a374-2ee03e8d6a39">
+    <serverData>
+      <paths name="muurisepp.ikt.khk.ee">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/veeb" local="$PROJECT_DIR$" web="/veeb" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="muurisepp.ikt.khk.ee" />
     <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
