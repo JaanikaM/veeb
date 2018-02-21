@@ -7,10 +7,12 @@
  */
 // lisame kasutusele sessiooni
 session_start();
-if(!isset($_SESSION['serveriArv'])){
+if(!isset($_SESSION['serveriArv']) and !isset($_SESSION['katseteArv'])){
     $_SESSION['serveriArv'] = rand(1, 50);
+    $_SESSION['katseteArv'] = 0;
 } else {
     $serveriArv = $_SESSION['serveriArv'];
+    $katseteArv = ++$_SESSION['katseteArv'];
 }
 // kontrollimiseks vaatame $_SESSION massiivi
 echo '<pre>';
@@ -39,6 +41,7 @@ if(!empty($_POST['kasutajaArv'])){
             echo 'Arvasid ära!<br />';
             echo 'Arv on '.$serveriArv.'<br />';
             echo 'Arvu ära aramiseks läks '.$katseteArv.' korda<br />';
+            unset($_SESSION['katseteArv']);
             exit;
         }
         echo 'Oled juba hästi lähedal<br />';
