@@ -66,7 +66,7 @@ function registreerimisVorm(){
                 <td>Päev</td>
             </tr>
             <tr>
-                <td>'.aasta().'</td>
+                <td>' .aasta().'</td>
                 <td>'.kuu().'</td>
                 <td>'.paev().'</td>
             </tr>
