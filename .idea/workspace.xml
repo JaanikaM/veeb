@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="394a7c6b-6f87-4c34-b2af-fa0e96df681d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/praks1/andmetootlus.php" afterPath="$PROJECT_DIR$/praks1/andmetootlus.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,9 +45,11 @@
       <file leaf-file-name="andmetootlus.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/praks1/andmetootlus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="476">
+              <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+              <folding>
+                <marker date="1519306037787" expanded="true" signature="661:772" ph="INSERT INTO andmed... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,7 +160,7 @@
       <workItem from="1518606031444" duration="1000" />
       <workItem from="1518607256625" duration="1572000" />
       <workItem from="1519195665427" duration="4168000" />
-      <workItem from="1519305625974" duration="293000" />
+      <workItem from="1519305625974" duration="384000" />
     </task>
     <task id="LOCAL-00001" summary="Kontrolliti funktsiooni tööd erinevate soodustuste arvutamiseks">
       <created>1518607466950</created>
@@ -343,11 +344,25 @@
       <option name="project" value="LOCAL" />
       <updated>1519305921854</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Lisati andmebaasi serveriga ühendamise kasutamine">
+      <created>1519305961589</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1519305961589</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Lisati päringu saatmise kirjeldus">
+      <created>1519306016186</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1519306016186</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6034000" />
+    <option name="totallyTimeSpent" value="6125000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="310" y="8" width="1052" height="688" extended-state="0" />
@@ -383,7 +398,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Kontrolliti funktsiooni tööd erinevate soodustuste arvutamiseks" />
     <MESSAGE value="Parandati parameetrite vaikeväärtused" />
     <MESSAGE value="Lisati testväärtused massiivi kujul" />
     <MESSAGE value="Kasutati väärtused massiivist" />
@@ -407,7 +421,9 @@
     <MESSAGE value="Lisati andmetootluse faili" />
     <MESSAGE value="Lisati vormiandmete kontrollimine ja väljastamine" />
     <MESSAGE value="Lisati andmebaasi serveriga ühendamine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lisati andmebaasi serveriga ühendamine" />
+    <MESSAGE value="Lisati andmebaasi serveriga ühendamise kasutamine" />
+    <MESSAGE value="Lisati päringu saatmise kirjeldus" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lisati päringu saatmise kirjeldus" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -508,9 +524,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/praks1/andmetootlus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="476">
+          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+          <folding>
+            <marker date="1519306037787" expanded="true" signature="661:772" ph="INSERT INTO andmed... " />
+          </folding>
         </state>
       </provider>
     </entry>
