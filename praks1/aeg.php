@@ -5,16 +5,18 @@
  * Date: 21.02.2018
  * Time: 09:39
  */
-//PÄEV
 function paev(){
+    $hetkePaev = date('j', time());
     $valik = '<select name="paev">';
     for($paev = 1; $paev < 32; $paev++){
+        if($paev == $hetkePaev){
+            $valik = $valik.'<option value="'.$paev.'" selected>'.$paev.'</option>';
+        }
         $valik = $valik.'<option value="'.$paev.'">'.$paev.'</option>';
     }
     $valik = $valik.'</select>';
     return $valik;
 }
-// KUU
 function kuu(){
 //    $kuud = array('Jaanuar', 'Veebruar', 'Märts', 'Aprill', 'Mai', 'Juuni', 'Juuli', 'August', 'September', 'Oktoober', 'November', 'Detsember');
     $kuud = array();
@@ -23,31 +25,32 @@ function kuu(){
         $kuuNumber = date('m', mktime(0, 0, 0, $i));
         $kuud[$kuuNumber] = $kuuNimi;
     }
+    $hetkeKuu = date('m', time());
     $valik = '<select name="kuu">';
     foreach($kuud as $kuuNumber => $kuuNimi){
+        if($kuuNumber == $hetkeKuu){
+            $valik = $valik.'<option value="'.$kuuNumber.'" selected>'.$kuuNimi.'</option>';
+        }
         $valik = $valik.'<option value="'.$kuuNumber.'">'.$kuuNimi.'</option>';
     }
     $valik = $valik.'</select>';
     return $valik;
 }
-// AASTA
-function aasta()
-{
+function aasta(){
     $hetkeAasta = date('Y', time());
     $valik = '<select name="aasta">';
-    for ($aasta = 1920; $aasta < 2040; $aasta++) {
-        if ($aasta == $hetkeAasta) {
-            $valik = $valik . '<option value="' . $aasta . '" selected>' . $aasta . '</option>';
+    for($aasta = 1920; $aasta < 2040; $aasta++){
+        if($aasta == $hetkeAasta){
+            $valik = $valik.'<option value="'.$aasta.'" selected>'.$aasta.'</option>';
         }
-        $valik = $valik . '<option value="' . $aasta . '">' . $aasta . '</option>';
+        $valik = $valik.'<option value="'.$aasta.'">'.$aasta.'</option>';
     }
-    $valik = $valik . '</select>';
+    $valik = $valik.'</select>';
     return $valik;
 }
-// Registreerimise vorm
 function registreerimisVorm(){
     echo '
-    <form action="" method="post">
+    <form action="andmetootlus.php" method="post">
         <table>
             <tr>
                 <td>Eesnimi</td>
@@ -77,5 +80,3 @@ function registreerimisVorm(){
     ';
 }
 registreerimisVorm();
-echo '<pre>';
-
